@@ -1,0 +1,7 @@
+Aquamarine 4 9684,0 translucent
+Amethyst 6 8750,0 transparent
+Topaz 8 26700,5 transparent
+Garnet 10 1980,5 opaque
+Citrine 8 17600,0 transparent
+Chrysolite 7 13200,8 transparent
+Agate 12 11500,0 translucent
