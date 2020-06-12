@@ -1,0 +1,5 @@
+Alexandrite 2 500,0 translucent
+Diamond 1 85600,0 transparent
+Sapphire 3 1200,5 translucent
+Emerald 3 850,3 transparent
+Ruby 5 10800,0 transparent
