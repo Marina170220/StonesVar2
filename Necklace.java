@@ -1,26 +1,30 @@
-import java.util.List;
+import java.util.LinkedList;
 
 public class Necklace {
 
-    static float totalCost;
-    static int totalKarat;
-    static List<Stone> necklace;
+    float totalCost;
+    int totalKarat;
+    LinkedList<Stone> necklace;
 
-    Necklace(float totalCost, int totalKarat){
-        Necklace.totalCost =totalCost;
-        Necklace.totalKarat =totalKarat;
-    }
-    static void findTotalCost (){
-        for(Stone s: necklace) {
-            totalCost += s.getStonePrice();
-        }
-        System.out.println("\nNecklace cost is " + totalCost + " $");
+    Necklace(float totalCost, int totalKarat) {
+        this.totalCost = totalCost;
+        this.totalKarat = totalKarat;
     }
 
-    static void findTotalKarat (){
-        for (Stone s: necklace) {
-            totalKarat += s.getKarat();
-        }
-        System.out.println("\nNecklace total weight is " + totalKarat + " karats");
+    public float getTotalCost() {
+        return totalCost;
     }
+
+    public void setTotalCost(float totalCost) {
+        this.totalCost = totalCost;
+    }
+
+    public int getTotalKarat() {
+        return totalKarat;
+    }
+
+    public void setTotalKarat(int totalKarat) {
+        this.totalKarat = totalKarat;
+    }
+
 }
