@@ -41,15 +41,4 @@ public class Stone implements Comparable<Stone> {
             return stonePrice.compareTo(s.getStonePrice());
         }
 }
-class PreciousStone extends Stone{
 
-    public PreciousStone(String name, byte karat, float karatCost, String transparency) {
-        super(name, karat, karatCost, transparency);
-    }
-}
-class SemipreciousStone extends Stone{
-
-    public SemipreciousStone(String name, byte karat, float karatCost, String transparency) {
-        super(name, karat, karatCost, transparency);
-    }
-}
