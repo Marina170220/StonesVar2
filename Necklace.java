@@ -1,10 +1,7 @@
-import java.util.LinkedList;
-
 public class Necklace {
 
     float totalCost;
     int totalKarat;
-    LinkedList<Stone> necklace;
 
     Necklace(float totalCost, int totalKarat) {
         this.totalCost = totalCost;
