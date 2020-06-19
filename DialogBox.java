@@ -1,10 +1,8 @@
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Map;
+import java.util.*;
 
 public interface DialogBox {
 
     Collection<Stone> chooseStoneType();
-    //void showStonesList(String stoneType);
-    Map<Stone, Integer> selectedStones(ArrayList <Stone> c);
+
+    void selectedStones(ArrayList<Stone> c);
 }
