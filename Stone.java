@@ -1,12 +1,12 @@
 public class Stone implements Comparable<Stone> {
 
         String name;
-        byte karat;
+        Byte karat;
         float karatCost;
         Float stonePrice;
         String transparency;
 
-        public Stone(String name, byte karat, float karatCost, String transparency) {
+        public Stone(String name, Byte karat, float karatCost, String transparency) {
             this.name = name;
             this.karat = karat;
             this.karatCost = karatCost;
@@ -19,7 +19,7 @@ public class Stone implements Comparable<Stone> {
             return name;
         }
 
-        public byte getKarat() {
+        public Byte getKarat() {
             return karat;
         }
 
@@ -38,7 +38,7 @@ public class Stone implements Comparable<Stone> {
 
         @Override
         public int compareTo(Stone s) {
-            return stonePrice.compareTo(s.getStonePrice());
+            return karat.compareTo(s.getKarat());
         }
 }
 
