@@ -2,22 +2,22 @@ import java.util.*;
 
 public class Selection implements DialogBox {
 
-    @Override
-    public ArrayList<Stone> chooseStoneType() {
 
+    @Override
+    public ArrayList<Stone> chooseStoneType(ArrayList<Stone> list1, ArrayList<Stone> list2, ArrayList<Stone> list3) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Choose stone type\nPrecious\nSemiprecious\nShow all");
         String stoneType = scanner.next().trim().toLowerCase();
 
         if (stoneType.contains("semi")) {
-            System.out.println(Main.semipreciousStoneCollection);
-            return Main.semipreciousStoneCollection;
+            System.out.println(list1);
+            return list1;
         } else if (stoneType.contains("all")) {
-            System.out.println(Main.collectionStone);
-            return Main.collectionStone;
+            System.out.println(list2);
+            return list2;
         } else {
-            System.out.println(Main.preciousStoneCollection);
-            return Main.preciousStoneCollection;
+            System.out.println(list3);
+            return list3;
         }
     }
 
@@ -57,7 +57,7 @@ public class Selection implements DialogBox {
         }
 
         while (answer.contains("y"));
-        System.out.println("Your selectedStones contains " + totalStonesAmount + " stones, including\n" + selectedStones);
+        System.out.println("Your selected stones contains " + totalStonesAmount + " stones, including\n" + selectedStones);
 
         counter = 0;
         while (counter <= totalStonesAmount) {
